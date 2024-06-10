@@ -27,7 +27,7 @@ This application is built with the following technologies:
 	Visit localhost:8000/ to see the front-end of the application
 
 ### Assumptions or decisions made during the development
-1. Assumed that this is a single paged application. Having that in mind, I decided not to create a controller that will return the `index.blade.php` as the landing page.
+1. Assumed that this is a single paged application. Having that in mind, I decided not to create a controller that will return the `index.blade.php` as the landing page and moved the logic to route file `web.php`.
 2. I assumed that there maybe need for future modifications on the project core pages. That is why I decided to create a layout that will have the primary parts of the project(header, footer etc). This will help in the easier maintainance of the project when needed.
 
 #### Challenges faced and how they were overcome
