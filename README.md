@@ -33,3 +33,4 @@ This application is built with the following technologies:
 #### Challenges faced and how they were overcome
 1. Getting the videos to play: I was able to overcome this challenge by checking out on how `videojs` plugin works and the basic dependencies that are required for the plugin to work effienctly
 2. Getting some of the animated parts to work: I was able to overcome this by ensuring that I used the same version JQuery and the animation plugin that were used on the site.
+3. Deploying the application to Netlify or Digital Ocean: I noticed that Netlify does not support the deployment of Laravel application and I don't to spend much time troubleshooting the application Digital ocean, I decided to host the application my personal hosting account I have with Namecheap Hosting since I am very familiar with it and have hosted many laravel applications on it.
