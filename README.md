@@ -6,7 +6,7 @@ This application is built with the following technologies:
 4. PHP(8.2.18) and Apache/2.4.48
 5. Laravel Framework(11.9.2)
 6. MYSQL(5.0.12)
-7.Composer version 2.6.5 2023-10-06 10:11:5
+7. Composer version 2.6.5 2023-10-06 10:11:5
 10. Openserver 6.0.0(8.2.18)
 
 ### This is how you can install this application
