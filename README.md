@@ -1,66 +1,51 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## Fullstack development Assessment
+This application is built with the following technologies:
+1. HTML
+2. CSS,
+4. Jquery(1.12.4)
+5. PHP(8.2.18) and Apache/2.4.48
+6. Laravel Framework(11.9.2)
+7. MYSQL(5.0.12)
+8. Font-awesome(4.7.0)
+9.Composer version 2.6.5 2023-10-06 10:11:5
+10. Openserver 6.0.0(8.2.18)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
+### This is how you can install this application
+1. Clone this Repository(Repo) with the following command `git clone https://github.com/Bonifaceebuka/os-systems.git`
+2. Move to the DIR of the Repo `cd os-systems.git`
+3. Install composer with `composer install`
+4. Save .env.example file as .env or run this command: `cp .env.example .env`
+5.	Open the .env file and set the Database configurations as follows:<br>
+	DB_CONNECTION=mysql<br>
+	DB_HOST=127.0.0.1<br>
+	DB_PORT=3306<br>
+	DB_DATABASE=YOUR_DATABASE_NAME<br>
+	DB_USERNAME=YOUR_SERVER_USERNAME<br>
+	DB_PASSWORD=YOUR_DATABASE_PASSWORD (Leave it empty if you have none)<br>
+6. Generate new Key with this command: `php artisan key:generate`
+7. Import the database tables with this command: `php artisan migrate` or use the `os-system.sql file` in 'db' folder of this project
+8. Run the Seeder to insert demo into the database whcih you can use for testing the application. Run the seeder with the following artisan command<br>
+    `php artisan db:seed`
+9.  Run `php artisan storage:link` to ensure that you don't have issues with file upload to your storage folder.
+10. Start the application with `php artisan serve`
+	Visit localhost:8000/ to see the front-end of the application
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### This is how this application works
+#### An unauthenticated user can perform the following actions on this application
+1. Access the list of available posts with pagination
+2. Create new post
+3. Update an existing post
+4. Delete an existing post
+5. Sign up for a new account
+6. Login to an already created account
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+#### An authenticated user can perform the following actions on this application
+1. Access the list of all the available categories
+2. Create new categories
+3. Update and already created category
+4. Delete an already created category
+5. Create new post
+6. Update an existing post
+7. Delete an existing post
+8. Logout from already created account
